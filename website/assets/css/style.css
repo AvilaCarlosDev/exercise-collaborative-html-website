@@ -1,91 +1,86 @@
-/* Estilo general del cuerpo */
+/* General Body Style */
 body {
-    background: black; /* Márgenes negros */
-    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    background: black;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Encabezado */
+/* Header */
 .header {
     position: relative;
-    background: url('../img/bg.jpg') no-repeat center center; /* Imagen de fondo */
-    background-size: cover; /* Ajustar la imagen para cubrir todo el espacio */
-    height: 100vh; /* Altura completa de la ventana */
-    margin: 0 10%; /* Márgenes negros del 10% */
+    background: url('../img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black; /* Texto en negro */
+    color: black;
 }
 
 .header .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Contenido centrado dentro de los márgenes */
+    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Oscurecer ligeramente la imagen */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .header .container {
     position: relative;
-    z-index: 2; /* Asegurar que el texto esté encima de la imagen */
+    z-index: 2;
 }
 
-/* Barra de navegación */
+/* Navbar */
 .navbar {
-    position: fixed; /* Fijar la barra en la parte superior */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Asegurar que ocupe todo el ancho */
-    z-index: 1030; /* Asegurar que esté por encima de otros elementos */
+    width: 100%;
+    z-index: 1030;
 }
 
 .navbar-nav {
-    flex-direction: row; /* Alinear los botones en una fila */
+    flex-direction: row;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 15px; /* Espaciado entre los botones */
+    margin-right: 15px;
 }
 
-.navbar-nav .nav-link {
-    color: #ccc; /* Color del texto */
-    text-decoration: none; /* Quitar subrayado */
-    font-size: 16px; /* Tamaño de fuente */
-}
-
-/* Barra de navegación */
-.navbar .navbar-brand {
-    color: #ccc; /* Cambiar el color del texto del botón "Start Bootstrap" */
-    text-decoration: none; /* Quitar subrayado */
-    font-size: 16px; /* Tamaño de fuente */
+.navbar-nav .nav-link, .navbar .navbar-brand {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .navbar .navbar-brand:hover {
-    color: #ccc; /* Cambiar el color al pasar el mouse */
-    text-decoration: none; /* Mantener sin subrayado */
+    color: #ccc;
+    text-decoration: none;
 }
 
-/* Contenido principal */
+/* Main Content */
+.content, #contact, footer {
+    margin: 0 10%;
+    padding: 80px 20px;
+}
+
 .content {
-    padding: 80px 20px; /* Espaciado interno ajustado */
-    background: white; /* Fondo blanco para el contenido */
-    margin: 0 10%; /* Márgenes negros del 10% */
-    border-radius: 10px; /* Bordes redondeados */
+    background: white;
 }
 
 .content-item {
     display: flex;
     align-items: center;
-    margin-bottom: 80px; /* Espaciado entre secciones */
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+    margin-bottom: 80px;
+    flex-wrap: wrap;
 }
 
 .content-item:nth-child(even) {
-    flex-direction: row-reverse; /* Cambiar el orden en elementos pares */
+    flex-direction: row-reverse;
 }
 
 .text {
@@ -94,14 +89,14 @@ body {
 }
 
 .text h2 {
-    font-size: 2rem; /* Tamaño del encabezado ajustado */
+    font-size: 2rem;
     margin-bottom: 15px;
-    font-weight: bold; /* Negrita para el encabezado */
+    font-weight: bold;
 }
 
 .text p {
-    font-size: 1.2rem; /* Tamaño del texto ajustado */
-    line-height: 1.8; /* Espaciado entre líneas */
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 .image {
@@ -110,46 +105,44 @@ body {
 }
 
 .image img {
-    border-radius: 50%; /* Forma circular */
-    width: 80px; /* Reducir aún más el tamaño de la imagen */
-    height: 80px; /* Reducir aún más el tamaño de la imagen */
-    object-fit: cover; /* Asegurar que la imagen se ajuste correctamente */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
 }
 
-/* Barra de navegación */
 .navbar ul {
-    list-style: none; /* Quitar viñetas */
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Flexbox para alinear elementos */
-    justify-content: center; /* Centrar elementos */
-    background-color: #333; /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    background-color: #333;
 }
 
 .navbar ul li {
-    margin: 0 15px; /* Espaciado entre elementos */
+    margin: 0 15px;
 }
 
 .navbar ul li a {
-    color: white; /* Color del texto */
-    text-decoration: none; /* Quitar subrayado */
-    font-size: 16px; /* Tamaño de fuente */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-/* Estilo del texto principal */
+/* Hero Section */
 .hero h1 {
-    font-size: 4rem; /* Tamaño del título ajustado */
+    font-size: 4rem;
     margin: 0;
-    font-weight: bold; /* Negrita para el título */
+    font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.8rem; /* Tamaño del subtítulo ajustado */
+    font-size: 1.8rem;
     margin: 20px 0 0;
-    font-weight: 300; /* Peso de fuente más ligero */
+    font-weight: 300;
 }
 
-/* Sección de contenido */
 .content h2 {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -160,52 +153,67 @@ body {
     line-height: 1.8;
 }
 
-/* Portafolio */
+/* Portfolio */
 .portfolio img {
     margin-bottom: 15px;
 }
 
-/* Contacto */
+/* Contact Form */
 .contact form {
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* Responsividad */
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    margin: 0 10%;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .header {
-        padding: 150px 20px; /* Reducir el padding en pantallas pequeñas */
+        padding: 150px 20px;
     }
 
     .hero h1 {
-        font-size: 3rem; /* Reducir el tamaño del título */
+        font-size: 3rem;
     }
 
     .hero p {
-        font-size: 1.5rem; /* Reducir el tamaño del subtítulo */
+        font-size: 1.5rem;
     }
 
     .content-item {
-        flex-direction: column; /* Cambiar a diseño en columna */
+        flex-direction: column;
     }
 
     .image img {
-        width: 150px; /* Reducir el tamaño de las imágenes */
+        width: 150px;
         height: 150px;
     }
 }
 
 @media (max-width: 576px) {
     .hero h1 {
-        font-size: 2.5rem; /* Reducir más el tamaño del título */
+        font-size: 2.5rem;
     }
 
     .hero p {
-        font-size: 1.2rem; /* Reducir más el tamaño del subtítulo */
+        font-size: 1.2rem;
     }
 
     .image img {
-        width: 120px; /* Reducir aún más el tamaño de las imágenes */
+        width: 120px;
         height: 120px;
     }
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    text-align: left;
+    padding: 80px 20px;
+    margin: 0 10%;
 }
